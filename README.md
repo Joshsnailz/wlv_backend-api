@@ -1,32 +1,19 @@
-# CodeIgniter 4 Application Starter
+# The PHP backend framework with CodeIgniter 4
 
-## What is CodeIgniter?
+## Backend API
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+This repository was done as part of the summative assessment on the completion of the web technologies module of the Msc in Computer Science with the University of Wolverhampton by Joshua Chihozhwa
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
-
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
-
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
-
-## Installation & updates
-
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
-
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
 
 ## Setup
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+Clone the repo into your local machine,
+
+Create a database in your sql server called workouts_recorder or you can change the database settings to your respective database of choice in the config file..
+When that has been done, you need to run a php spark migrate command to create respective tables within your db. 
+Then use the php spark serve command to deploy the application on port 8080
+
+You should already have a working PHP installation in your system then you can make use of php spark to run this code. 
 
 ## Important Change with index.php
 
@@ -52,17 +39,4 @@ Problems with it can be raised on our forum, or as issues in the main repository
 
 PHP version 7.4 or higher is required, with the following extensions installed:
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
 
-> [!WARNING]
-> The end of life date for PHP 7.4 was November 28, 2022.
-> The end of life date for PHP 8.0 was November 26, 2023.
-> If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> The end of life date for PHP 8.1 will be November 25, 2024.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
